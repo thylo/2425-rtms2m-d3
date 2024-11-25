@@ -116,9 +116,11 @@ function initGraph(pokemons: DSVParsedArray<Pokemon>) {
     .style("--typeColor", (d) => colorScale(d));
 }
 
-d3.text("/pokemon.csv")
-  .then((txt: string) => d3.csvParse<Pokemon, string>(txt, d3.autoType))
-  .then((value) => {
-    console.log("received", value);
-    initGraph(value);
-  });
+
+const getData = async ()=>{
+  const pokemons = await d3.text("/pokemon.csv")
+      .then((txt: string) => d3.csvParse<Pokemon, string>(txt, d3.autoType));
+  initGraph(pokemons);
+}
+
+getData();
