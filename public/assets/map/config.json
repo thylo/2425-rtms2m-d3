@@ -1,0 +1,306 @@
+{
+  "min_distance" : 0.05,
+  "default_lang" : "fr",
+  "routes": {
+    "thirty" : [0,1,2,3,4,5],
+    "sixty" :  [0,1,2,3,4,6,7,5,15,14,13],
+    "ninety" : [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+  },
+  "score_audio_won" : 50,
+  "score_timer_seconds_left" : 0.2,
+  "score_challenge_won" : 100,
+  "score_enigma_won" : 150,
+  "points_of_interest":[
+  {
+    "id": "Office Tourisme",
+    "number": 0,
+    "type": "start",
+    "title": {
+      "fr": "Office du Tourisme\nde Tournai",
+      "nl": "Dienst voor Toerisme\nvan Doornik",
+      "en": "Tournai Tourist Office"
+    },
+    "description": {
+      "fr": "Ta balade débute ici !",
+      "nl": "Je wandeling begint hier!",
+      "en": "Your walk starts here!"
+    },
+    "image" : "beffroi.jpg",
+    "link" : "https://g.page/VisitTournai?share"
+  },
+  {
+    "id": "Beffroi",
+    "number": 1,
+    "type": "challenge",
+    "title": {
+      "fr": "LE BEFFROI",
+      "nl": "HET BELFORT",
+      "en": "THE BELFRY"
+    },
+    "description": {
+      "fr": "Place-toi\nsur la marque au sol\net appuie sur play !",
+      "nl": "Ga op de markering\nop de grond staan\nen druk op play!",
+      "en": "Stand on\nthe ground mark\nand press play!"
+    },
+    "image" : "beffroi.jpg",
+    "link" : "https://g.page/beffroi-de-tournai?share"
+  },
+  {
+    "id": "Fausse Porte",
+    "number": 2,
+    "type": "enigma",
+    "title": {
+      "fr": "LA FAUSSE PORTE\nDE LA CATHÉDRALE",
+      "nl": "DE VALSE DEUR\nVAN DE KATHEDRAAL",
+      "en": "THE FALSE DOOR\nOF THE CATHEDRAL"
+    },
+    "description": {
+      "fr": "Appuie sur Play !",
+      "nl": "Druk op play!",
+      "en": "Press play!"
+    },
+    "image" : "fausse porte.jpg",
+    "link" : "https://goo.gl/maps/sTzWk9iELS8cUMu58"
+  },
+  {
+    "id": "Cathedrale",
+    "number": 3,
+    "type": "challenge",
+    "title": {
+      "fr": "LA CATHÉDRALE\nET SA ROSACE",
+      "nl": "DE KATHEDRAAL\nEN HAAR ROOSVENSTER",
+      "en": "THE CATHEDRAL\nAND ITS ROSE WINDOW"
+    },
+    "description": {
+      "fr": "Place-toi\nsur la marque au sol\net appuie sur play !",
+      "nl": "Ga op de markering\nop de grond staan\nen druk op play!",
+      "en": "Stand on\nthe ground mark\nand press play!"
+    },
+    "image" : "default.jpg",
+    "link" : "https://goo.gl/maps/Wnsrk7AJaRPaJLxB7"
+  },
+  {
+    "id": "Lalaing",
+    "number": 4,
+    "type": "enigma",
+    "title": {
+      "fr": "CHRISTINE DE LALAING",
+      "nl": "CHRISTINE DE LALAING",
+      "en": "CHRISTINE DE LALAING"
+    },
+    "description": {
+      "fr": "Appuie sur Play !",
+      "nl": "Druk op play!",
+      "en": "Press play!"
+    },
+    "image" : "default.jpg",
+    "link": "https://goo.gl/maps/m1wfF2JauLPvd4847"
+  },
+  {
+    "id": "Halles",
+    "number": 5,
+    "type": "comment",
+    "title": {
+      "fr": "LA HALLE AUX DRAPS",
+      "nl": "DE LAKENHALLE",
+      "en": "THE CLOTH HALL"
+    },
+    "description": {
+      "fr": "Appuie sur Play !",
+      "nl": "Druk op play!",
+      "en": "Press play!"
+    },
+    "image" : "default.jpg",
+    "link" : "https://goo.gl/maps/hfmFUrcBxkqAzAqA6",
+    "showImageTiming": {
+        "fr": 64.3,
+        "nl": 81.7,
+        "en": 60
+    }
+  },
+  {
+    "id": "Fort Rouge",
+    "number": 6,
+    "type": "comment",
+    "title": {
+      "fr": "LE FORT ROUGE",
+      "nl": "HET RODE FORT",
+      "en": "THE RED FORT"
+    },
+    "description": {
+      "fr": "Appuie sur Play !",
+      "nl": "Druk op play!",
+      "en": "Press play!"
+    },
+    "image" : "default.jpg",
+    "link": "https://goo.gl/maps/qAcCDdTQdSwWstt58",
+    "showImageTiming": {
+        "fr": 77,
+        "nl": 97.6,
+        "en": 71.6
+    }
+  },
+  {
+    "id": "Martine",
+    "number": 7,
+    "type": "enigma",
+    "title": {
+      "fr": "MARTINE ET PATAPOUF",
+      "nl": "TINY EN POEFFIE",
+      "en": "MARTINE AND PATAPOUF"
+    },
+    "description": {
+      "fr": "Appuie sur Play !",
+      "nl": "Druk op play!",
+      "en": "Press play!"
+    },
+    "image" : "default.jpg",
+    "link": "https://goo.gl/maps/CMGFjAUWjVi1g4aN7"
+  },
+  {
+    "id": "Saint Jacques",
+    "number": 8,
+    "type": "enigma",
+    "title": {
+      "fr": "L’ÉGLISE ST-JACQUES",
+      "nl": "DE SINT-JACOBSKERK",
+      "en": "ST JAMES CHURCH"
+    },
+    "description": {
+      "fr": "Appuie sur Play !",
+      "nl": "Druk op play!",
+      "en": "Press play!"
+    },
+    "image" : "default.jpg",
+    "link": "https://goo.gl/maps/rGct7hL26ir5LnQD9"
+  },
+  {
+    "id": "Pont des trous",
+    "number": 9,
+    "type": "comment",
+    "title": {
+      "fr": "PONT DES TROUS\nVU DU PONT DE FER",
+      "nl": "DE GATENBRUG\nGEZIEN VANAF DE IJZEREN BRUG",
+      "en": "THE PONT DES TROUS\nSEEN FROM THE PONT DE FER"
+    },
+    "description": {
+      "fr": "Appuie sur Play !",
+      "nl": "Druk op play!",
+      "en": "Press play!"
+    },
+    "image" : "default.jpg",
+    "link": "https://goo.gl/maps/cUMeDG7VGaammTxB7",
+    "showImageTiming": {
+        "fr": 63.5,
+        "nl": 70.6,
+        "en": 58.2
+    }
+  },
+  {
+    "id": "Escaut",
+    "number": 10,
+    "type": "challenge",
+    "title": {
+      "fr": "LA PIERRE DE TOURNAI\nET LE SIÈCLE DE LOUIS XIV",
+      "nl": "DE DOORNIKSE STEEN\nEN LODEWIJK XIV",
+      "en": "TOURNAI STONE\nAND THE AGE OF LOUIS XIV"
+    },
+    "description": {
+      "fr": "Place-toi\nsur la marque au sol\net appuie sur play !",
+      "nl": "Ga op de markering\nop de grond staan\nen druk op play!",
+      "en": "Stand on\nthe ground mark\nand press play!"
+    },
+    "image" : "default.jpg",
+    "link": "https://goo.gl/maps/GzTVLpDUyUShje8R8"
+  },
+  {
+    "id": "Childeric",
+    "number" : 11,
+    "type": "enigma",
+    "title": {
+      "fr": "LE TOMBEAU DE CHILDÉRIC",
+      "nl": "DE GRAFTOMBE VAN CHILDERIK",
+      "en": "THE TOMB OF CHILDÉRIC"
+    },
+    "description": {
+      "fr": "Appuie sur Play !",
+      "nl": "Druk op play!",
+      "en": "Press play!"
+    },
+    "image" : "default.jpg",
+    "link": "https://goo.gl/maps/8oEPjj6NEr6W7889A"
+  },
+  {
+    "id": "Naiade",
+    "number" : 12,
+    "type": "comment",
+    "title": {
+      "fr": "LA NAÏADE",
+      "nl": "DE NAJADE",
+      "en": "LA NAÏADE"
+    },
+    "description": {
+      "fr": "Appuie sur Play !",
+      "nl": "Druk op play!",
+      "en": "Press play!"
+    },
+    "image" : "default.jpg",
+    "link": "https://goo.gl/maps/nJ2TeKpJhjopQFjU8",
+    "showImageTiming": {
+        "fr": 46.6,
+        "nl": 54.18,
+        "en": 38.6
+    }
+  },
+  {
+    "id": "Museum",
+    "number" : 13,
+    "type": "challenge",
+    "title": {
+      "fr": "LE PARC\nGEORGES BRASSENS",
+      "nl": "HET GEORGES BRASSENS\nPARK",
+      "en": "THE GEORGES BRASSENS\nPARK"
+    },
+    "description": {
+      "fr": "Place-toi\nsur la marque au sol\net appuie sur play !",
+      "nl": "Ga op de markering\nop de grond staan\nen druk op play!",
+      "en": "Stand on\nthe ground mark\nand press play!"
+    },
+    "image" : "default.jpg",
+    "link": "https://goo.gl/maps/VAWEZkx5ymDjFixFA"
+  },
+  {
+    "id": "Beaux-Arts",
+    "number" : 14,
+    "type": "challenge",
+    "title": {
+      "fr": "LE MUSÉE\nDES BEAUX-ARTS",
+      "nl": "HET MUSEUM\nVOOR SCHONE KUNSTEN",
+      "en": "THE MUSEUM\nOF FINE ARTS"
+    },
+    "description": {
+      "fr": "Place-toi\nsur la marque au sol\net appuie sur play !",
+      "nl": "Ga op de markering\nop de grond staan\nen druk op play!",
+      "en": "Stand on\nthe ground mark\nand press play!"
+    },
+    "image" : "default.jpg",
+    "link": "https://goo.gl/maps/gRzUXzRbtbs6Xf6W9"
+  },
+  {
+    "id": "Marionette",
+    "number" : 15,
+    "type": "enigma",
+    "title": {
+      "fr": "LES PORIGINELLES",
+      "nl": "DE PORIGINELLES",
+      "en": "THE PORIGINELLES"
+    },
+    "description": {
+      "fr": "Appuie sur Play !",
+      "nl": "Druk op play!",
+      "en": "Press play!"
+    },
+    "image" : "default.jpg",
+    "link" : "https://goo.gl/maps/1iCkvpCJNm43ks5YA"
+  }
+]}

@@ -24,6 +24,8 @@ const padding = 60;
 function initGraph(pokemons: DSVParsedArray<Pokemon>) {
   const app = d3.select("#app");
 
+  const doubleAttack = pokemons.map((p)=>({...p, attack: p.attack*2 }))
+
   const svg = app
     .append("svg")
     .attr("width", width)

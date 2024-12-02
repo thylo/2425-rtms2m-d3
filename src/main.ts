@@ -69,6 +69,7 @@ function initGraph(pokemons: DSVParsedArray<Pokemon>) {
     .attr("class", "axis")
     .style("transform", `translate(${padding}px,${height - padding}px)`)
     .call(d3.axisBottom(xScale));
+  svg.append("text").attr("x", padding + xScale.range()[1]).attr('y', height-padding).text('defense');
 
   svg
     .append("g")
@@ -81,10 +82,10 @@ function initGraph(pokemons: DSVParsedArray<Pokemon>) {
     .classed("circles", true)
     .style("transform", `translate(${padding}px,${padding}px)`)
     .selectAll<SVGCircleElement, Pokemon>("circle")
-    .data(pokemons, d=>d.id);
+    .data(pokemons, (d) => d.id);
 
   circles
-    .join('circle')
+    .join("circle")
     .classed("circle", true)
     .attr("r", (d) => radiusScale(d.defense))
     .attr("fill", (d: Pokemon) => colorScale(d.type_1))
@@ -92,7 +93,7 @@ function initGraph(pokemons: DSVParsedArray<Pokemon>) {
       return `translate(${xScale(datum.hp)}px,${yScale(datum.attack)}px)`;
     })
     .on("mouseover", (event, d) => {
-      tooltip.classed("visible", true).html(d.name);
+      tooltip.classed("visible", true).html(`${d.name} ${d.attack}`);
       d3.select(event.currentTarget).classed("selected", true);
     })
     .on("mousemove", (event) => {
@@ -110,17 +111,17 @@ function initGraph(pokemons: DSVParsedArray<Pokemon>) {
     .append("ul")
     .attr("class", "legend")
     .selectAll<HTMLLIElement, string>("li")
-    .data(distinctTypes, (d)=>d)
+    .data(distinctTypes, (d) => d)
     .join("li")
     .text((d) => d)
     .style("--typeColor", (d) => colorScale(d));
 }
 
-
-const getData = async ()=>{
-  const pokemons = await d3.text("/pokemon.csv")
-      .then((txt: string) => d3.csvParse<Pokemon, string>(txt, d3.autoType));
+const getData = async () => {
+  const pokemons = await d3
+    .text("/pokemon.csv")
+    .then((txt: string) => d3.csvParse<Pokemon, string>(txt, d3.autoType));
   initGraph(pokemons);
-}
+};
 
 getData();
